@@ -32,4 +32,8 @@ app.use("/task2", require("./routes/task2Route"));
 app.use("/task3", require("./routes/task3Route"));
 app.use("/task4", require("./routes/task4Route"));
 
+app.use((req, res) => {
+    res.send("Request not found");
+})
+
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));
