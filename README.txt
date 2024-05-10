@@ -16,4 +16,4 @@ html => express-handlebars template
         app.use(express.urlencoded({ extended: true }));
 
 +/ Task2, task3:
-- duyệt theo danh sách. Những gì lặp lại thì thay thế bằng tham số dữ liệu
+- duyệt theo danh sách. Những gì lặp lại thì thay thế bằng tham số dữ liệu 

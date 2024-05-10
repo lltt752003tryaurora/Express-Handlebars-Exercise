@@ -32,6 +32,9 @@ app.use("/task2", require("./routes/task2Route"));
 app.use("/task3", require("./routes/task3Route"));
 app.use("/task4", require("./routes/task4Route"));
 
+app.get((req, res) => {
+    throw new Error("Not implemented")
+})
 app.use((req, res) => {
     res.send("Request not found");
 })
