@@ -32,11 +32,16 @@ app.use("/task2", require("./routes/task2Route"));
 app.use("/task3", require("./routes/task3Route"));
 app.use("/task4", require("./routes/task4Route"));
 
-app.get((req, res) => {
-    throw new Error("Not implemented")
-})
+// app.get((req, res) => {
+//     throw new Error("Not implemented")
+// })
 app.use((req, res) => {
     res.send("Request not found");
+})
+
+app.use((error, req, res) => {
+    console.error()
+    res.send("Server error")
 })
 
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));
